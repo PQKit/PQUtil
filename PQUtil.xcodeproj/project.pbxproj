@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6012355E231F4DD50090CC0A /* PQUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60123554231F4DD50090CC0A /* PQUtil.framework */; };
+		60123563231F4DD50090CC0A /* PQUtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60123562231F4DD50090CC0A /* PQUtilTests.swift */; };
+		60123565231F4DD60090CC0A /* PQUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 60123557231F4DD50090CC0A /* PQUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60123596231F4E0A0090CC0A /* PQData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6012356F231F4E0A0090CC0A /* PQData.swift */; };
+		60123597231F4E0A0090CC0A /* PQDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60123570231F4E0A0090CC0A /* PQDate.swift */; };
+		60123598231F4E0A0090CC0A /* QFCLLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60123571231F4E0A0090CC0A /* QFCLLocation.swift */; };
+		60123599231F4E0A0090CC0A /* PQDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60123572231F4E0A0090CC0A /* PQDouble.swift */; };
+		6012359A231F4E0A0090CC0A /* PQString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60123573231F4E0A0090CC0A /* PQString.swift */; };
+		6012359B231F4E0A0090CC0A /* PQButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60123575231F4E0A0090CC0A /* PQButton.swift */; };
+		6012359C231F4E0A0090CC0A /* PQProgressFlashLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60123577231F4E0A0090CC0A /* PQProgressFlashLayer.swift */; };
+		6012359D231F4E0A0090CC0A /* PQProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60123578231F4E0A0090CC0A /* PQProgressView.swift */; };
+		6012359E231F4E0A0090CC0A /* PQProgressWaveLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60123579231F4E0A0090CC0A /* PQProgressWaveLayer.swift */; };
+		6012359F231F4E0A0090CC0A /* PQProgressBaseLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6012357A231F4E0A0090CC0A /* PQProgressBaseLayer.swift */; };
+		601235A0231F4E0A0090CC0A /* PQProgressCirclrLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6012357B231F4E0A0090CC0A /* PQProgressCirclrLayer.swift */; };
+		601235A1231F4E0A0090CC0A /* PQTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6012357C231F4E0A0090CC0A /* PQTextField.swift */; };
+		601235A2231F4E0A0090CC0A /* PQColorSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6012357D231F4E0A0090CC0A /* PQColorSlider.swift */; };
+		601235A3231F4E0A0090CC0A /* PQCircleColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6012357E231F4E0A0090CC0A /* PQCircleColorView.swift */; };
+		601235A4231F4E0A0090CC0A /* SMCircleColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6012357F231F4E0A0090CC0A /* SMCircleColorView.swift */; };
+		601235A5231F4E0A0090CC0A /* UICollectionView+PQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60123581231F4E0A0090CC0A /* UICollectionView+PQ.swift */; };
+		601235A6231F4E0A0090CC0A /* UIViewController+PQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60123582231F4E0A0090CC0A /* UIViewController+PQ.swift */; };
+		601235A7231F4E0A0090CC0A /* UITableView+PQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60123583231F4E0A0090CC0A /* UITableView+PQ.swift */; };
+		601235A8231F4E0A0090CC0A /* UILabel+PQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60123584231F4E0A0090CC0A /* UILabel+PQ.swift */; };
+		601235A9231F4E0A0090CC0A /* UISlider+PQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60123585231F4E0A0090CC0A /* UISlider+PQ.swift */; };
+		601235AA231F4E0A0090CC0A /* UIStackView+PQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60123586231F4E0A0090CC0A /* UIStackView+PQ.swift */; };
+		601235AB231F4E0A0090CC0A /* PQGCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60123588231F4E0A0090CC0A /* PQGCD.swift */; };
+		601235AC231F4E0A0090CC0A /* PQNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60123589231F4E0A0090CC0A /* PQNotify.swift */; };
+		601235AD231F4E0A0090CC0A /* PQAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6012358A231F4E0A0090CC0A /* PQAnimate.swift */; };
+		601235AE231F4E0A0090CC0A /* PQUpgradeVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6012358C231F4E0A0090CC0A /* PQUpgradeVersion.swift */; };
+		601235AF231F4E0A0090CC0A /* PQAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6012358D231F4E0A0090CC0A /* PQAlertController.swift */; };
+		601235B0231F4E0A0090CC0A /* PQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6012358F231F4E0A0090CC0A /* PQView.swift */; };
+		601235B1231F4E0A0090CC0A /* PQUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60123590231F4E0A0090CC0A /* PQUIImageView.swift */; };
+		601235B2231F4E0A0090CC0A /* PQImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60123591231F4E0A0090CC0A /* PQImage.swift */; };
+		601235B3231F4E0A0090CC0A /* PQColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60123592231F4E0A0090CC0A /* PQColor.swift */; };
+		601235B4231F4E0A0090CC0A /* PQNavgationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60123593231F4E0A0090CC0A /* PQNavgationItem.swift */; };
+		601235B5231F4E0A0090CC0A /* PQType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60123594231F4E0A0090CC0A /* PQType.swift */; };
+		601235B6231F4E0A0090CC0A /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60123595231F4E0A0090CC0A /* UIViewController.swift */; };
+		601235B8231F4E1E0090CC0A /* PQSupportFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601235B7231F4E1E0090CC0A /* PQSupportFiles.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6012355F231F4DD50090CC0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6012354B231F4DD50090CC0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60123553231F4DD50090CC0A;
+			remoteInfo = PQUtil;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		60123554231F4DD50090CC0A /* PQUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PQUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60123557231F4DD50090CC0A /* PQUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PQUtil.h; sourceTree = "<group>"; };
+		60123558231F4DD50090CC0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6012355D231F4DD50090CC0A /* PQUtilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PQUtilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60123562231F4DD50090CC0A /* PQUtilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PQUtilTests.swift; sourceTree = "<group>"; };
+		60123564231F4DD50090CC0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6012356F231F4E0A0090CC0A /* PQData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQData.swift; sourceTree = "<group>"; };
+		60123570231F4E0A0090CC0A /* PQDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQDate.swift; sourceTree = "<group>"; };
+		60123571231F4E0A0090CC0A /* QFCLLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QFCLLocation.swift; sourceTree = "<group>"; };
+		60123572231F4E0A0090CC0A /* PQDouble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQDouble.swift; sourceTree = "<group>"; };
+		60123573231F4E0A0090CC0A /* PQString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQString.swift; sourceTree = "<group>"; };
+		60123575231F4E0A0090CC0A /* PQButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQButton.swift; sourceTree = "<group>"; };
+		60123577231F4E0A0090CC0A /* PQProgressFlashLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQProgressFlashLayer.swift; sourceTree = "<group>"; };
+		60123578231F4E0A0090CC0A /* PQProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQProgressView.swift; sourceTree = "<group>"; };
+		60123579231F4E0A0090CC0A /* PQProgressWaveLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQProgressWaveLayer.swift; sourceTree = "<group>"; };
+		6012357A231F4E0A0090CC0A /* PQProgressBaseLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQProgressBaseLayer.swift; sourceTree = "<group>"; };
+		6012357B231F4E0A0090CC0A /* PQProgressCirclrLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQProgressCirclrLayer.swift; sourceTree = "<group>"; };
+		6012357C231F4E0A0090CC0A /* PQTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQTextField.swift; sourceTree = "<group>"; };
+		6012357D231F4E0A0090CC0A /* PQColorSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQColorSlider.swift; sourceTree = "<group>"; };
+		6012357E231F4E0A0090CC0A /* PQCircleColorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQCircleColorView.swift; sourceTree = "<group>"; };
+		6012357F231F4E0A0090CC0A /* SMCircleColorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMCircleColorView.swift; sourceTree = "<group>"; };
+		60123581231F4E0A0090CC0A /* UICollectionView+PQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+PQ.swift"; sourceTree = "<group>"; };
+		60123582231F4E0A0090CC0A /* UIViewController+PQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+PQ.swift"; sourceTree = "<group>"; };
+		60123583231F4E0A0090CC0A /* UITableView+PQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+PQ.swift"; sourceTree = "<group>"; };
+		60123584231F4E0A0090CC0A /* UILabel+PQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+PQ.swift"; sourceTree = "<group>"; };
+		60123585231F4E0A0090CC0A /* UISlider+PQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISlider+PQ.swift"; sourceTree = "<group>"; };
+		60123586231F4E0A0090CC0A /* UIStackView+PQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+PQ.swift"; sourceTree = "<group>"; };
+		60123588231F4E0A0090CC0A /* PQGCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQGCD.swift; sourceTree = "<group>"; };
+		60123589231F4E0A0090CC0A /* PQNotify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQNotify.swift; sourceTree = "<group>"; };
+		6012358A231F4E0A0090CC0A /* PQAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQAnimate.swift; sourceTree = "<group>"; };
+		6012358C231F4E0A0090CC0A /* PQUpgradeVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQUpgradeVersion.swift; sourceTree = "<group>"; };
+		6012358D231F4E0A0090CC0A /* PQAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQAlertController.swift; sourceTree = "<group>"; };
+		6012358F231F4E0A0090CC0A /* PQView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQView.swift; sourceTree = "<group>"; };
+		60123590231F4E0A0090CC0A /* PQUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQUIImageView.swift; sourceTree = "<group>"; };
+		60123591231F4E0A0090CC0A /* PQImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQImage.swift; sourceTree = "<group>"; };
+		60123592231F4E0A0090CC0A /* PQColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQColor.swift; sourceTree = "<group>"; };
+		60123593231F4E0A0090CC0A /* PQNavgationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQNavgationItem.swift; sourceTree = "<group>"; };
+		60123594231F4E0A0090CC0A /* PQType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PQType.swift; path = ../../PQKit/PQTools/PQType.swift; sourceTree = "<group>"; };
+		60123595231F4E0A0090CC0A /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = ../../PQKit/PQTools/UIViewController.swift; sourceTree = "<group>"; };
+		601235B7231F4E1E0090CC0A /* PQSupportFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQSupportFiles.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60123551231F4DD50090CC0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6012355A231F4DD50090CC0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6012355E231F4DD50090CC0A /* PQUtil.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6012354A231F4DD50090CC0A = {
+			isa = PBXGroup;
+			children = (
+				60123556231F4DD50090CC0A /* PQUtil */,
+				60123561231F4DD50090CC0A /* PQUtilTests */,
+				60123555231F4DD50090CC0A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		60123555231F4DD50090CC0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60123554231F4DD50090CC0A /* PQUtil.framework */,
+				6012355D231F4DD50090CC0A /* PQUtilTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60123556231F4DD50090CC0A /* PQUtil */ = {
+			isa = PBXGroup;
+			children = (
+				601235B7231F4E1E0090CC0A /* PQSupportFiles.swift */,
+				6012358B231F4E0A0090CC0A /* Controllers */,
+				60123580231F4E0A0090CC0A /* Extensions */,
+				6012356E231F4E0A0090CC0A /* Foundation */,
+				60123587231F4E0A0090CC0A /* Other */,
+				60123594231F4E0A0090CC0A /* PQType.swift */,
+				6012358E231F4E0A0090CC0A /* UIKit */,
+				60123595231F4E0A0090CC0A /* UIViewController.swift */,
+				60123574231F4E0A0090CC0A /* Views */,
+				60123557231F4DD50090CC0A /* PQUtil.h */,
+				60123558231F4DD50090CC0A /* Info.plist */,
+			);
+			path = PQUtil;
+			sourceTree = "<group>";
+		};
+		60123561231F4DD50090CC0A /* PQUtilTests */ = {
+			isa = PBXGroup;
+			children = (
+				60123562231F4DD50090CC0A /* PQUtilTests.swift */,
+				60123564231F4DD50090CC0A /* Info.plist */,
+			);
+			path = PQUtilTests;
+			sourceTree = "<group>";
+		};
+		6012356E231F4E0A0090CC0A /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				6012356F231F4E0A0090CC0A /* PQData.swift */,
+				60123570231F4E0A0090CC0A /* PQDate.swift */,
+				60123571231F4E0A0090CC0A /* QFCLLocation.swift */,
+				60123572231F4E0A0090CC0A /* PQDouble.swift */,
+				60123573231F4E0A0090CC0A /* PQString.swift */,
+			);
+			name = Foundation;
+			path = ../../PQKit/PQTools/Foundation;
+			sourceTree = "<group>";
+		};
+		60123574231F4E0A0090CC0A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				60123575231F4E0A0090CC0A /* PQButton.swift */,
+				60123576231F4E0A0090CC0A /* PQProgressView */,
+				6012357C231F4E0A0090CC0A /* PQTextField.swift */,
+				6012357D231F4E0A0090CC0A /* PQColorSlider.swift */,
+				6012357E231F4E0A0090CC0A /* PQCircleColorView.swift */,
+				6012357F231F4E0A0090CC0A /* SMCircleColorView.swift */,
+			);
+			name = Views;
+			path = ../../PQKit/PQTools/Views;
+			sourceTree = "<group>";
+		};
+		60123576231F4E0A0090CC0A /* PQProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				60123577231F4E0A0090CC0A /* PQProgressFlashLayer.swift */,
+				60123578231F4E0A0090CC0A /* PQProgressView.swift */,
+				60123579231F4E0A0090CC0A /* PQProgressWaveLayer.swift */,
+				6012357A231F4E0A0090CC0A /* PQProgressBaseLayer.swift */,
+				6012357B231F4E0A0090CC0A /* PQProgressCirclrLayer.swift */,
+			);
+			path = PQProgressView;
+			sourceTree = "<group>";
+		};
+		60123580231F4E0A0090CC0A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				60123581231F4E0A0090CC0A /* UICollectionView+PQ.swift */,
+				60123582231F4E0A0090CC0A /* UIViewController+PQ.swift */,
+				60123583231F4E0A0090CC0A /* UITableView+PQ.swift */,
+				60123584231F4E0A0090CC0A /* UILabel+PQ.swift */,
+				60123585231F4E0A0090CC0A /* UISlider+PQ.swift */,
+				60123586231F4E0A0090CC0A /* UIStackView+PQ.swift */,
+			);
+			name = Extensions;
+			path = ../../PQKit/PQTools/Extensions;
+			sourceTree = "<group>";
+		};
+		60123587231F4E0A0090CC0A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				60123588231F4E0A0090CC0A /* PQGCD.swift */,
+				60123589231F4E0A0090CC0A /* PQNotify.swift */,
+				6012358A231F4E0A0090CC0A /* PQAnimate.swift */,
+			);
+			name = Other;
+			path = ../../PQKit/PQTools/Other;
+			sourceTree = "<group>";
+		};
+		6012358B231F4E0A0090CC0A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6012358C231F4E0A0090CC0A /* PQUpgradeVersion.swift */,
+				6012358D231F4E0A0090CC0A /* PQAlertController.swift */,
+			);
+			name = Controllers;
+			path = ../../PQKit/PQTools/Controllers;
+			sourceTree = "<group>";
+		};
+		6012358E231F4E0A0090CC0A /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				6012358F231F4E0A0090CC0A /* PQView.swift */,
+				60123590231F4E0A0090CC0A /* PQUIImageView.swift */,
+				60123591231F4E0A0090CC0A /* PQImage.swift */,
+				60123592231F4E0A0090CC0A /* PQColor.swift */,
+				60123593231F4E0A0090CC0A /* PQNavgationItem.swift */,
+			);
+			name = UIKit;
+			path = ../../PQKit/PQTools/UIKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6012354F231F4DD50090CC0A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60123565231F4DD60090CC0A /* PQUtil.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		60123553231F4DD50090CC0A /* PQUtil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60123568231F4DD60090CC0A /* Build configuration list for PBXNativeTarget "PQUtil" */;
+			buildPhases = (
+				6012354F231F4DD50090CC0A /* Headers */,
+				60123550231F4DD50090CC0A /* Sources */,
+				60123551231F4DD50090CC0A /* Frameworks */,
+				60123552231F4DD50090CC0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PQUtil;
+			productName = PQUtil;
+			productReference = 60123554231F4DD50090CC0A /* PQUtil.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6012355C231F4DD50090CC0A /* PQUtilTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6012356B231F4DD60090CC0A /* Build configuration list for PBXNativeTarget "PQUtilTests" */;
+			buildPhases = (
+				60123559231F4DD50090CC0A /* Sources */,
+				6012355A231F4DD50090CC0A /* Frameworks */,
+				6012355B231F4DD50090CC0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60123560231F4DD50090CC0A /* PBXTargetDependency */,
+			);
+			name = PQUtilTests;
+			productName = PQUtilTests;
+			productReference = 6012355D231F4DD50090CC0A /* PQUtilTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6012354B231F4DD50090CC0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = pgq;
+				TargetAttributes = {
+					60123553231F4DD50090CC0A = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					6012355C231F4DD50090CC0A = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 6012354E231F4DD50090CC0A /* Build configuration list for PBXProject "PQUtil" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6012354A231F4DD50090CC0A;
+			productRefGroup = 60123555231F4DD50090CC0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60123553231F4DD50090CC0A /* PQUtil */,
+				6012355C231F4DD50090CC0A /* PQUtilTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60123552231F4DD50090CC0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6012355B231F4DD50090CC0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60123550231F4DD50090CC0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601235B2231F4E0A0090CC0A /* PQImage.swift in Sources */,
+				6012359D231F4E0A0090CC0A /* PQProgressView.swift in Sources */,
+				601235A6231F4E0A0090CC0A /* UIViewController+PQ.swift in Sources */,
+				601235AE231F4E0A0090CC0A /* PQUpgradeVersion.swift in Sources */,
+				601235B1231F4E0A0090CC0A /* PQUIImageView.swift in Sources */,
+				60123598231F4E0A0090CC0A /* QFCLLocation.swift in Sources */,
+				6012359F231F4E0A0090CC0A /* PQProgressBaseLayer.swift in Sources */,
+				601235A3231F4E0A0090CC0A /* PQCircleColorView.swift in Sources */,
+				601235B4231F4E0A0090CC0A /* PQNavgationItem.swift in Sources */,
+				601235A8231F4E0A0090CC0A /* UILabel+PQ.swift in Sources */,
+				601235B5231F4E0A0090CC0A /* PQType.swift in Sources */,
+				60123599231F4E0A0090CC0A /* PQDouble.swift in Sources */,
+				601235B8231F4E1E0090CC0A /* PQSupportFiles.swift in Sources */,
+				601235AB231F4E0A0090CC0A /* PQGCD.swift in Sources */,
+				601235AC231F4E0A0090CC0A /* PQNotify.swift in Sources */,
+				601235B6231F4E0A0090CC0A /* UIViewController.swift in Sources */,
+				601235A5231F4E0A0090CC0A /* UICollectionView+PQ.swift in Sources */,
+				601235AD231F4E0A0090CC0A /* PQAnimate.swift in Sources */,
+				6012359B231F4E0A0090CC0A /* PQButton.swift in Sources */,
+				601235A7231F4E0A0090CC0A /* UITableView+PQ.swift in Sources */,
+				60123597231F4E0A0090CC0A /* PQDate.swift in Sources */,
+				601235B0231F4E0A0090CC0A /* PQView.swift in Sources */,
+				601235A1231F4E0A0090CC0A /* PQTextField.swift in Sources */,
+				6012359A231F4E0A0090CC0A /* PQString.swift in Sources */,
+				6012359C231F4E0A0090CC0A /* PQProgressFlashLayer.swift in Sources */,
+				60123596231F4E0A0090CC0A /* PQData.swift in Sources */,
+				601235A4231F4E0A0090CC0A /* SMCircleColorView.swift in Sources */,
+				6012359E231F4E0A0090CC0A /* PQProgressWaveLayer.swift in Sources */,
+				601235B3231F4E0A0090CC0A /* PQColor.swift in Sources */,
+				601235A9231F4E0A0090CC0A /* UISlider+PQ.swift in Sources */,
+				601235A0231F4E0A0090CC0A /* PQProgressCirclrLayer.swift in Sources */,
+				601235AF231F4E0A0090CC0A /* PQAlertController.swift in Sources */,
+				601235A2231F4E0A0090CC0A /* PQColorSlider.swift in Sources */,
+				601235AA231F4E0A0090CC0A /* UIStackView+PQ.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60123559231F4DD50090CC0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60123563231F4DD50090CC0A /* PQUtilTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60123560231F4DD50090CC0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60123553231F4DD50090CC0A /* PQUtil */;
+			targetProxy = 6012355F231F4DD50090CC0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		60123566231F4DD60090CC0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		60123567231F4DD60090CC0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		60123569231F4DD60090CC0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = B2BXA8AH8F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PQUtil/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = codepgq.PQUtil;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6012356A231F4DD60090CC0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = B2BXA8AH8F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PQUtil/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = codepgq.PQUtil;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6012356C231F4DD60090CC0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2BXA8AH8F;
+				INFOPLIST_FILE = PQUtilTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = codepgq.PQUtilTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6012356D231F4DD60090CC0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2BXA8AH8F;
+				INFOPLIST_FILE = PQUtilTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = codepgq.PQUtilTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6012354E231F4DD50090CC0A /* Build configuration list for PBXProject "PQUtil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60123566231F4DD60090CC0A /* Debug */,
+				60123567231F4DD60090CC0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60123568231F4DD60090CC0A /* Build configuration list for PBXNativeTarget "PQUtil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60123569231F4DD60090CC0A /* Debug */,
+				6012356A231F4DD60090CC0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6012356B231F4DD60090CC0A /* Build configuration list for PBXNativeTarget "PQUtilTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6012356C231F4DD60090CC0A /* Debug */,
+				6012356D231F4DD60090CC0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6012354B231F4DD50090CC0A /* Project object */;
+}
